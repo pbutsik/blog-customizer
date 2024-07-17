@@ -151,8 +151,8 @@ export function ArticleParamsForm({ setStyle }: ArticleParamsFormProps) {
 					/>
 
 					<div className={styles.bottomContainer}>
-						<Button title='Сбросить' type='reset' onClick={handleReset} />
-						<Button title='Применить' type='submit' />
+						<Button title='Сбросить' type='reset' kind='reset' onClick={handleReset} />
+						<Button title='Применить' type='submit' kind='submit' />
 					</div>
 				</form>
 			</aside>
