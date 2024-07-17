@@ -10,10 +10,23 @@
 	cursor: pointer;
 }
 
-.button:active {
-	background: var(--gold, #ffc802);
+.button[data-kind="submit"]:active {
+	background: #ffc802;
 }
 
-.button:hover {
-	background: var(--gold, #ffc802);
+.button[data-kind="submit"]:hover {
+	background: #ffc802;
+}
+
+.button[data-kind="reset"]:active {
+	background: #000000;
+	color: #ffffff;
+}
+
+.button[data-kind="reset"]:hover {
+	background: #000000;
+}
+
+.button[data-kind="reset"]:hover div  {
+	color: #ffffff !important;
 }
