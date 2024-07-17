@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export const fontFamilyClasses = [
 	'open-sans',
 	'ubuntu',
@@ -180,5 +182,7 @@ export const defaultArticleState = {
 export type ArticleStateType = typeof defaultArticleState;
 
 export interface ArticleParamsFormProps {
-	setStyle: React.Dispatch<React.SetStateAction<ArticleStateType>>;
+	children: ReactNode
+	handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void
+	handleReset: () => void
 }
