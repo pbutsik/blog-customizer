@@ -13,6 +13,7 @@ export type OptionType = {
 	value: string;
 	className: string;
 	optionClassName?: string;
+	name?: string;
 };
 
 export const fontFamilyOptions: OptionType[] & {
@@ -177,3 +178,7 @@ export const defaultArticleState = {
 };
 
 export type ArticleStateType = typeof defaultArticleState;
+
+export interface ArticleParamsFormProps {
+	setStyle: React.Dispatch<React.SetStateAction<ArticleStateType>>;
+}
